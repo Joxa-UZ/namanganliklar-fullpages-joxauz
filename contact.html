@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namanganliklar24|Contact</title>
 
-    <link rel="stylesheet" href="./css/contact.css">
+    <!-- <link rel="stylesheet" href="./css/contact.css"> -->
+    <link rel="stylesheet" href="./css/contact-mini.css">
 </head>
 <body>
 
@@ -101,28 +102,30 @@
                 <div class="contact">
                     
 
-                    <form action="https://echo.htmlacademy.ru/courses" method="post" class="contact-register">
+                    <form action="https://echo.htmlacademy.ru/courses" method="post" class="contact-register" autocomplete="off">
                         <div class="contact-register-top">
                             <label >
-                            <input class="contact-name-input" name="Your name" type="text" id="name" 
-                            placeholder="Имя">
+                            <input class="contact-name-input" name="Your-name" type="text" id="name" 
+                            placeholder="Имя" required>
                         </label>
 
                             <!-- number -->
                             <label >
-                            <input class="contact-name-input" name="Your number" type="tel" id="number" 
-                            placeholder="Номер телефона">
+                            <input class="contact-name-input" name="Your-number" type="tel" id="number" 
+                            placeholder="Номер телефона" required>
                         </label>
                         </div>
                         <div class="contact-register-under">
                             <label>
-                            <input class="contact-gmail" type="email" placeholder="Электронная почта">
+                            <input class="contact-gmail" type="email" name="your-gmail" placeholder="Электронная почта" required>
                          </label>
                             <label>
-                            <textarea class="contact-message"  cols="30" rows="10" placeholder="Текст"></textarea>
+                            <textarea class="contact-message"  cols="30" rows="10" name="your-text" placeholder="Текст"></textarea>
                         </label>
                         </div>
-                        
+                        <div class="button">
+                            <button class="contact-link" type="submit">Отправить</button>
+                        </div>
                     </form>
 
                     <div class="contact-info">
@@ -143,9 +146,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="button">
-                    <button class="contact-link" type="submit">Отправить</button>
-                </div>
+               
             </div>
         </section>
     </main>
