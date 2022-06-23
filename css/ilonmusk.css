@@ -1,5 +1,12 @@
 /*
 * Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.12,
 * Autoprefixer: v10.4.4
 * Browsers: last 4 version
@@ -163,32 +170,35 @@ img {
             align-items: center;
 }
 
-.search-box {
+.search-input{
     width: 275px;
     margin-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 13px;
-    padding-left: 41px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 40px;
     border-radius: 60px;
-    background-color: #fff;
-    color: #8D8D8D;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.search-box>span {
-    margin-left: 25px;
-}
-
-.search-icon::before {
-    background-size: contain;
-    position: absolute;
+    border: none;
+  }
+  .header-search{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-search::before{
     content: "";
+    position: absolute;
+    background-size: contain;
+    margin-right: 6px;
+    margin-left: 15px;
     background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-}
+  }
 
 .site-languages {
     display: -webkit-box;
@@ -380,6 +390,9 @@ img {
     list-style: none;
     border-bottom: 1px solid #d2d2d2;
 }
+.news-right-item:last-child .news-right-text-under{
+    margin-bottom: 0;
+  }
 .news-right-item-link{
     text-decoration: none;
     margin: 0;

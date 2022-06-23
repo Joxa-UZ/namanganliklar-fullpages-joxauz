@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namanganlik-24</title>
 
-    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/main-mini.css">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
 </head>
@@ -47,10 +47,12 @@
 
 
                     <div class="header-top-end">
-
-                        <div class="search-box search-icon">
-                            <span>Поиск</span>
-                        </div>
+                        <form action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+                            <label class="header-search">
+                                <input class="search-input" type="search" aria-label="Поиск" placeholder="Поиск" >
+                            </label>
+                        </form>
+                      
 
                         <span class="site-languages">
 
@@ -157,14 +159,16 @@
                         </div>
                     </li>
                     <li class="intro-list-item">
-                        <a class="intro-link" href="#">
-                            <h3 class="intro-link-text">Baidu запустила публичный сервис роботакси Apollo Go в Шанхае
-                                публичный сервис
-                            </h3>
-                        </a>
-                        <p class="intro-text">
-                            Автопарк Baidu состоит из модифицированных электромобилей EV... модифицированных
-                        </p>
+                        <div class="intro-list-item-box">
+                            <a class="intro-link" href="#">
+                                <h3 class="intro-link-text">Baidu запустила публичный сервис роботакси Apollo Go в Шанхае
+                                </h3>
+                            </a>
+                            <p class="intro-text">
+                                Автопарк Baidu состоит из модифицированных электромобилей EV...
+                            </p>
+                        </div>
+                       
                         <img class="intro-picture" src="./images/car.jpg" width="360" height="165" alt="car in a street"
                             srcset="./images/car.jpg 1x, ./images/car-2x.jpg 2x">
 
@@ -224,12 +228,13 @@
                         </div>
                     </li>
                     <li class="intro-list-item">
-                        <a class="intro-link" href="#">
-                            <h3 class="intro-link-text">Китайская марка JAC повысила цены на лифтбек и пикап в России
-                                повысила цены на
-                                лифтбек
-                            </h3>
-                        </a>
+                        <div class="intro-list-item-last-box">
+                            <a class="intro-link" href="#">
+                                <h3 class="intro-link-text">Китайская марка JAC повысила цены на лифтбек и пикап в России
+                                </h3>
+                            </a>
+                        </div>
+                        
                         <p class="intro-text">
                             Две модели китайского бренда JAC из пяти, представленных на российском...
                         </p>
@@ -240,8 +245,8 @@
 
                         <div class="intro-list-under tarantas-logo">
 
-                            <!-- <img class="intro-under-image" src="./images/kv-german-logo.svg" width="20" height="20" alt="kv logo">
-              <p class="intro-list-under-text"> -->
+                            <!-- <img class="intro-under-image" src="./images/kv-german-logo.svg" width="20" height="20" alt="kv logo">-->
+              <p class="intro-list-under-text"> 
                             Тарантас Ньюс <time class="intro-list-under-text" datetime="10:44">10:44</time>
                             </p>
                         </div>
@@ -337,9 +342,12 @@
                                 <img class="news-image" src="./images/city-china.jpg" width="210" height="165"
                                     alt="china city and flag" srcset="./images/city-china.jpg 1x, ./images/city-china2x.jpg 2x">
                                 <div class="news-contain">
-                                    <h3 class="news-theme">
-                                        Китай раскритиковал заключенный Австралией, США и Великобританией антикитайский союз AUKUS
-                                    </h3>
+                                    <div class="news-theme-box">
+                                        <h3 class="news-theme">
+                                            Китай раскритиковал заключенный Австралией, США и Великобританией антикитайский союз AUKUS
+                                        </h3>
+                                    </div>
+                                    
                                     <p class="news-text">
                                         Не только Франция, которая лишилась многомиллиардного контракта с Австралий, осталась недовольна созданием трехстороннего оборонного альянса AUKUS, пишет Anna-News.info
                                     </p>

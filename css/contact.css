@@ -1,23 +1,10 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
 
 @font-face {
   font-family: "Rubik";
@@ -44,6 +31,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -135,29 +123,32 @@ body {
           align-items: center;
 }
 
-.search-box {
+.search-input{
   width: 275px;
   margin-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 13px;
-  padding-left: 41px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 40px;
   border-radius: 60px;
-  background-color: #fff;
-  color: #8D8D8D;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  border: none;
 }
-
-.search-box>span {
-  margin-left: 25px;
+.header-search{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.search-icon::before {
-  background-size: contain;
-  position: absolute;
+.header-search::before{
   content: "";
+  position: absolute;
+  background-size: contain;
+  margin-right: 6px;
+  margin-left: 15px;
   background-image: url(../images/search-icon.svg);
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -229,16 +220,6 @@ body {
   transition: 1s;
 }
 
-.login:hover {
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
-  color: #000;
-  background-color: #fff;
-  border: 2px solid #000;
-}
-
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,15 +252,6 @@ body {
 .nav-link:hover {
   color: #ff0000;
   border-bottom: 2px solid #f00;
-}
-
-.nav-link:active {
-  padding: 5px;
-  border: 2px solid #000;
-  color: #fff;
-  background-color: #000;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .contact {
@@ -417,13 +389,13 @@ body {
   display: block;
   width: 696px;
   resize: none;
+  padding-top: 18px;
+  padding-left: 20px;
   border: 1px solid #00000033;
   border-radius: 10px;
 }
 
 .contact-message::-webkit-input-placeholder {
-  padding-top: 18px;
-  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -432,8 +404,6 @@ body {
 }
 
 .contact-message::-moz-placeholder {
-  padding-top: 18px;
-  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -442,8 +412,6 @@ body {
 }
 
 .contact-message:-ms-input-placeholder {
-  padding-top: 18px;
-  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -452,8 +420,6 @@ body {
 }
 
 .contact-message::-ms-input-placeholder {
-  padding-top: 18px;
-  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -462,8 +428,6 @@ body {
 }
 
 .contact-message::placeholder {
-  padding-top: 18px;
-  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
